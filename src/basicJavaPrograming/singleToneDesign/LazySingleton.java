@@ -1,27 +1,26 @@
 package basicJavaPrograming.singleToneDesign;
 
 public class LazySingleton {
-	//////// Declare and create instance/////////
-	private static LazySingleton instance = new LazySingleton();
+	////////////// Declare instance but not created/////////
+	private static LazySingleton instance;
 	
-	////////// Create constructor here ////////
 	private LazySingleton() {
-		System.out.println("Instance is created!!!!!!!!!!!");
+		System.out.println("Created instance!!!!!!!!!!!");
 	}
+
+	//// This method is created for creating instance///////////
 	
-	/////////// Create object herer ////////////
-	public static LazySingleton getInstance() {
+	public static synchronized LazySingleton getInstance() {
 		if(instance == null) {
 			instance = new LazySingleton();
 		}
-		
-		
 		return instance;
 	}
 	
-	//////////////// Create a method for Message///////
+	///////// Testing Message//////////////
+	
 	public void getMessage() {
-		System.out.println("It is  a message");
+		System.out.println("It is testing message");
 	}
-
+	
 }
