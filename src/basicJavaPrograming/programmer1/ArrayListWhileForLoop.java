@@ -31,7 +31,9 @@ public class ArrayListWhileForLoop {
 			 System.out.print(list.get(i)+",");
 		 }
 		 
+		 System.out.println("============It is very simple matter.====================");
 		 
+		 System.out.println("=========It is ok. We are searching  a bridegroom for  marriage.");
 		 
 	}
 
