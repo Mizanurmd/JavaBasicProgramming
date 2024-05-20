@@ -5,6 +5,8 @@ public class TestSingleton {
 		EarlySingleTon obj = EarlySingleTon.getInstance();
 		EarlySingleTon obj2 = EarlySingleTon.getInstance();
 		
+		System.out.println(obj);
+		System.out.println(obj2);
 		if(obj ==obj2) {
 			System.out.println("Objects are same.");
 		}else {
